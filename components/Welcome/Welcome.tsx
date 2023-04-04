@@ -1,5 +1,6 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text, Anchor, Image, Button, BackgroundImage, Box, Center, SimpleGrid } from '@mantine/core';
 import useStyles from './Welcome.styles';
+import Link from 'next/link';
 
 export function Welcome() {
   const { classes } = useStyles();
@@ -7,19 +8,24 @@ export function Welcome() {
   return (
     <>
       <Title className={classes.title} align="center" mt={100}>
-        Welcome to{' '}
+        TourVirtual<br />
         <Text inherit variant="gradient" component="span">
-          Mantine
+          Apartamento #1
         </Text>
       </Title>
       <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit index.tsx file.
+        Este es el tour virtual demo como ejercicio del <Anchor  href="https://pantallaverde.co/toursvirtuales" target="_blank">Curso Tours Virtuales</Anchor>.
       </Text>
+      <br/>
+      <Center>
+      <SimpleGrid cols={1}>
+      <Image src="/imgs/GS__0090.JPG" radius="lg" width="35rem" />
+      <Link href="/tour">
+      <Button fullWidth>Comenzar</Button>
+      </Link>
+      </SimpleGrid>
+      </Center>
+      
     </>
   );
 }
