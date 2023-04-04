@@ -27,7 +27,7 @@ export default function Hall() {
     </Box> */}
       <Canvas flat >
         <Suspense fallback={<Html center><Text align='center'>Dándole duro...<Loader /></Text></Html>} >
-          <Environment background files='/GS__0090.hdr' />
+          <Environment background files='/0090.hdr' />
           <group>
             <mesh position={[50,-200,300]}>
               <Html center>

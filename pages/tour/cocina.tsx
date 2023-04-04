@@ -27,7 +27,7 @@ export default function Cocina() {
     </Box> */}
       <Canvas flat >
         <Suspense fallback={<Html center><Text align='center'>Dándole duro...<Loader /></Text></Html>} >
-          <Environment background files='/GS__0094.hdr' />
+          <Environment background files='/0094.hdr' />
           <group>
             <mesh position={[100,-100, 300]}>
               <Html center>
