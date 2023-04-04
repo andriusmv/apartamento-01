@@ -19,7 +19,7 @@ export function Welcome() {
       <br/>
       <Center>
       <SimpleGrid cols={1}>
-      <Image src="/imgs/GS__0090.JPG" radius="lg" width="35rem" />
+      <Image src="/GS__0090.JPG" radius="lg" width="35rem" />
       <Link href="/tour">
       <Button fullWidth>Comenzar</Button>
       </Link>
